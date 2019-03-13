@@ -36,7 +36,7 @@ public class AdminProductController {
     @RequestMapping("/inventory/add")
     public String productAdd(Model model) {
         Product product = new Product();
-        product.setCondition("New");
+//        product.setCondition("New");
         model.addAttribute("category_list", list_categories.categories);
         model.addAttribute(product);
 

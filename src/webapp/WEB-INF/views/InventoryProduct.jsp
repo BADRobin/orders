@@ -33,7 +33,7 @@
                         <td>${product.firstName}</td>
                         <td>${product.manufacturing}</td>
                         <td>${product.category}</td>
-                        <td>${product.condition}</td>
+                        <%--<td>${product.condition}</td>--%>
                         <td><p class="price"><fmt:formatNumber type="currency">${product.price}</fmt:formatNumber> MXN</p></td>
                         <td>
                             <!-- PRODUCT INFORMATION-->

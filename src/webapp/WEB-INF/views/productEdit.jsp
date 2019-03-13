@@ -36,14 +36,14 @@
                                value="${product.description}"/>
             </div>
 
-            <div class="form-group">
-                <label for="condition"> Состояние продукта</label>
-                <br>
-                <label class="checkbox-inline">
-                    <form:radiobutton path="condition" id="condition" value="Новый"/> Новый </label>
-                <label class="checkbox-inline">
-                    <form:radiobutton path="condition" id="condition" value="Используемый"/> Используемый </label>
-            </div>
+            <%--<div class="form-group">--%>
+                <%--<label for="condition"> Состояние продукта</label>--%>
+                <%--<br>--%>
+                <%--<label class="checkbox-inline">--%>
+                    <%--<form:radiobutton path="condition" id="condition" value="New"/> Новый </label>--%>
+                <%--<label class="checkbox-inline">--%>
+                    <%--<form:radiobutton path="condition" id="condition" value="Old"/> Используемый </label>--%>
+            <%--</div>--%>
 
             <div class="form-group">
                 <label for="price"> Цена $ MXN</label> <form:errors path="price" cssStyle="color: red"/>

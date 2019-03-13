@@ -19,15 +19,18 @@ public class Product implements Serializable {
     private static final long serialVersionUID = -5275312162791227880L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private int product_id;
 
     @NotEmpty(message = "The name of the product is required")
+    @GeneratedValue
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private String firstName;
 
     private String description;
     private String category;
-    private String condition;
+//    private String condition;
     private String manufacturing;
 
     @Min(value = 0, message = "The units in existence can not be less than zero")
@@ -41,7 +44,8 @@ public class Product implements Serializable {
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnore
-    private List<CartItem> cartItemList;
+
+    public List<CartItem> cartItemList;
 
     public int getProduct_id() {
         return product_id;
@@ -91,13 +95,13 @@ public class Product implements Serializable {
         this.category = category;
     }
 
-    public String getCondition() {
-        return condition;
-    }
+//    public String getCondition() {
+//        return condition;
+//    }
 
-    public void setCondition(String condition) {
-        this.condition = condition;
-    }
+//    public void setCondition(String condition) {
+//        this.condition = condition;
+//    }
 
     public String getManufacturing() {
         return manufacturing;

@@ -1,6 +1,6 @@
 package org.ua.bryl.services.implementation;
 
-import org.ua.bryl.dao.Dao_product;
+import org.ua.bryl.dao.Dao_Product;
 import org.ua.bryl.model.Product;
 import org.ua.bryl.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.List;
 public class ProductServiceImp implements ProductService {
 
     @Autowired
-    private Dao_product dao_product;
+    private Dao_Product dao_product;
 
     public List<Product> getProductList() {
         return dao_product.getProductList();

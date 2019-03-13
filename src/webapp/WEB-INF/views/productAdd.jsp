@@ -34,13 +34,13 @@
                 <form:textarea path="description" id="description" class="form-control" tabindex="4"/>
             </div>
 
-            <div class="form-group">
-                <label for="condition"> Состояние продукта</label>
-                <label class="checkbox-inline">
-                    <form:radiobutton path="condition" id="condition" value="Новый" tabindex="5"/> новый </label>
-                <label class="checkbox-inline">
-                    <form:radiobutton path="condition" id="condition" value="используемый"/> используемый </label>
-            </div>
+            <%--<div class="form-group">--%>
+                <%--<label for="condition"> Состояние продукта</label>--%>
+                <%--<label class="checkbox-inline">--%>
+                    <%--<form:radiobutton path="condition" id="condition" value="New" tabindex="5"/> новый </label>--%>
+                <%--<label class="checkbox-inline">--%>
+                    <%--<form:radiobutton path="condition" id="condition" value="Old"/> используемый </label>--%>
+            <%--</div>--%>
 
             <div class="form-group">
                 <label for="price"> Цена $Грн</label> <form:errors path="price" cssStyle="color: red"/>

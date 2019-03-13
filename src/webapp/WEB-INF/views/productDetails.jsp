@@ -43,10 +43,10 @@
                     <td><h4>Категория</h4></td>
                     <td><h4>${product.category}</h4></td>
                 </tr>
-                <tr>
-                    <td><h4>Состояние</h4></td>
-                    <td><h4>${product.condition}</h4></td>
-                </tr>
+                <%--<tr>--%>
+                    <%--<td><h4>Состояние</h4></td>--%>
+                    <%--<td><h4>${product.condition}</h4></td>--%>
+                <%--</tr>--%>
                 <tr>
                     <td><h4>Доступные единицы:</h4></td>
                     <td><h4>${product.units_in_existence}</h4></td>

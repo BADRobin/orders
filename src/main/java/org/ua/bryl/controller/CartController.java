@@ -32,7 +32,7 @@ public class CartController {
     public String getCartRedirect(@PathVariable(value = "cart_id")int cart_id, Model model) {
         model.addAttribute(cart_id);
 
-        return "shopping—art";
+        return "shoppingCart";
     }
 
 }

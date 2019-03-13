@@ -1,6 +1,6 @@
 package org.ua.bryl.dao.implementation;
 
-import org.ua.bryl.dao.Dao_product;
+import org.ua.bryl.dao.Dao_Product;
 import org.ua.bryl.model.Product;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -16,7 +16,7 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class DaoProductImp implements Dao_product {
+public class DaoProductImp implements Dao_Product {
 
     @Autowired
     private SessionFactory sessionFactory;
